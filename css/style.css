@@ -125,6 +125,9 @@ header.topbar .auth >div img {
 nav .top {
     padding: 1.5rem 0;
 }
+nav .top .contact >div:last-child, nav .top .time >div:last-child {
+    flex-direction: column;
+}
 nav .top .contact h5 , nav .top .time h5{
     font-family: Raleway-black;
     margin-bottom: 0.25rem;
@@ -195,6 +198,8 @@ nav .navbar a:hover {
      background-position: center;
      position:absolute;
      bottom: -20px;
+     left: 50%;
+     transform: translateX(-50%);
      z-index: -1;
  }
  header.hero {
@@ -423,7 +428,13 @@ section.about-meal p{
 
 section.our-services {
     background:var(--light);
+    position: relative;
+    z-index: 0;
 
+}
+section.our-services .card-wrapper{
+    margin-right: -2rem;
+    margin-top: 8rem;
 }
 section.our-services .service-card {
     background: var(--heaven);
@@ -431,11 +442,25 @@ section.our-services .service-card {
     padding: 4rem;
     position: relative;
     border-radius: 4px;
+    margin-right: 2rem;
 }
 section.our-services .service-card .icon {
     position:absolute;
     top:-45px;
-    left:50%
+    left:50%;
     transform:translateX(-50%);
     
+}
+section.our-services .service-card h2{
+    font-family: "Raleway-bold";
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+section.our-services .service-card p{
+    line-height: 1.6;
+    margin-bottom: 1rem;
+
+}
+.text-primary{
+    color: var(--primary);
 }
